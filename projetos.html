@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projetos desenvolvidos por Joao Guilherme." />
+  <meta name="keywords" content="projetos, portfólio, websites, desenvolvimento web" />
+  <meta name="author" content="Joao Guilherme" />
+  <title>Projetos | Joao Guilherme</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Joao Guilherme</a>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu">☰</button>
+      <nav id="nav-menu">
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="projetos.html" class="active">Projetos</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>Meus Projetos</h1>
+    </div>
+  </section>
+
+  <!-- FILTRO -->
+  <section class="container secao">
+    <div class="filtros">
+      <button class="filtro-btn active" data-filtro="todos">Todos</button>
+      <button class="filtro-btn" data-filtro="website">Website</button>
+      <button class="filtro-btn" data-filtro="sistema">Sistema</button>
+    </div>
+
+    <div class="projetos-grid" id="projetos-grid">
+
+      <div class="projeto" data-anim data-categoria="website">
+        <div class="projeto-imagem projeto-cor-1"></div>
+        <div class="projeto-info">
+          <span class="projeto-tag">Website</span>
+          <h3>Site Institucional</h3>
+          <p>Website simples para divulgação de uma pequena empresa, com formulário de contato.</p>
+        </div>
+      </div>
+
+      <div class="projeto" data-anim data-categoria="sistema">
+        <div class="projeto-imagem projeto-cor-2"></div>
+        <div class="projeto-info">
+          <span class="projeto-tag">Sistema</span>
+          <h3>Sistema de Cadastro</h3>
+          <p>Aplicação para cadastro de usuários, com validação de formulário em JavaScript.</p>
+        </div>
+      </div>
+
+      <div class="projeto" data-anim data-categoria="website">
+        <div class="projeto-imagem projeto-cor-3"></div>
+        <div class="projeto-info">
+          <span class="projeto-tag">Website</span>
+          <h3>Blog Pessoal</h3>
+          <p>Blog simples com lista de postagens e layout responsivo.</p>
+        </div>
+      </div>
+
+      <div class="projeto" data-anim data-categoria="sistema">
+        <div class="projeto-imagem projeto-cor-4"></div>
+        <div class="projeto-info">
+          <span class="projeto-tag">Sistema</span>
+          <h3>Lista de Tarefas</h3>
+          <p>Aplicação web para gerenciar tarefas, utilizando JavaScript para interatividade.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-conteudo">
+      <p>&copy; 2026 Joao Guilherme. Todos os direitos reservados.</p>
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
